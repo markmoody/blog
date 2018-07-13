@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container">
+    <div class = "row justify-content-md-center">
+        <h2> Welcome to M2's Python Project</h2>
+    </div>
+    <div class="row justify-content-md-center">
+        <div class=""container page-form"">
+           <form id="login-form" action="/auth/login" method="post">
+
+                <div>
+                    <nav class="navbar naba-light" style="background-color: #e3f2fd;">
+                        <a class="nav-link" href="http://127.0.0.1:4995/register">Not a Member>? Join Now</a>
+                    </nav>
+                    <nav class="navbar naba-light" style="background-color: #e3f2fd;">
+                        <a class="nav-link" href="http://127.0.0.1:4995/forgot_password">Forgot password?</a>
+                    </nav>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" class="form-control" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="form-control" name="password">
+                </div>
+                <button type="submit"  class="btn btn-success">Log in</button>
+            </form>
+        </div>
+    </div>
+    <div class="row justify-content-md-center">
+        <p>        </p>
+    </div>
+    <div class="row justify-content-md-center">
+        <p> Built following the Udeme Complete Python Web Course: Build 8 Python Web Apps</p>
+    </div>
+
+</div>
+
+{% endblock %}

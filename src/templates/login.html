@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container page-form">
+    <form id="login-form" action="/auth/login" method="post">
+        <div class="pb-2 mt-4 mb-2 border-bottom">
+            Welcome to M2's first Python Project
+        </div> -
+
+        <div>
+            <nav class="navbar naba-light" style="background-color: #e3f2fd;">
+                <a class="nav-link" href="http://127.0.0.1:4995/register">Registration</a>
+            </nav>
+
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" id="email" class="form-control" name="email">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" class="form-control" name="password">
+        </div>
+        <button type="submit"  class="btn btn-success">Log in</button>
+    </form>
+  </div>
+
+{% endblock %}
